@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {}
+
+.header {
+    &-title {}
+}
+
+.left_menu {
+    &-header {}
+    &-content {}
+}
+
+.right_content {
+    &-header {}
+    &-content {
+        &-category {
+            &-title {}
+            &-items {}
+        }
+    }
+}
