@@ -1,0 +1,310 @@
+body {
+    background-image: url("../img/Фон.webp");
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+    background-color: rgb(93, 181, 181);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.6), 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.elem_menu {
+    margin: auto 1vw auto 2vw;
+}
+
+.korz {
+    margin-left: 30vw;
+}
+
+.korz>img {
+    height: 50px;
+    width: auto;
+    margin: auto;
+}
+
+.elem_menu>a {
+    text-decoration: none;
+    color: white;
+    font: 1.2vw Century Gothic;
+    font-weight: bold;
+}
+
+.elem_menu>a:hover {
+    color: rgb(255, 235, 173)!important;
+}
+
+#c1 {
+    color: rgb(247, 195, 8);
+}
+
+.contener {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.cont_el {
+    padding: 1vw;
+}
+
+.cont_img>img {
+    width: 15vw;
+    height: 15vw;
+}
+
+.cont_text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -4.5vw;
+    padding-bottom: 1.5vw;
+    padding-top: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.80);
+    opacity: 0;
+    /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s;
+    font-size: 1.5vw;
+}
+
+.cont_el:hover .cont_text {
+    opacity: 100;
+    transition: 1s;
+    /*Скорость перехода состояния элемента*/
+}
+
+.cont_el>p {
+    font-size: 1.1vw;
+}
+
+.podval {
+    width: 100%;
+    height: 5vw;
+    background-color: rgb(8, 101, 121);
+}
+
+#o_nas {
+    display: none;
+    text-align: center;
+    margin-top: 4.3vw;
+    color: rgb(41, 158, 159);
+    font: 6vw "Arial Black";
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+}
+
+#p1 {
+    color: black;
+    font: 6vw "Bahnschrift Condensed";
+}
+
+#p2_p3 {
+    display: flex;
+    justify-content: center;
+}
+
+#p2,
+#p3 {
+    color: black;
+    font: 1.2vw "Bahnschrift Condensed";
+}
+
+#p3 {
+    margin-top: 11vw;
+}
+
+#gde_ky {
+    text-align: center;
+    display: none;
+    margin-top: 4.3vw;
+    font: 3.5vw "Arial Black";
+    color: rgb(41, 158, 159);
+    padding: 7vw 0px;
+}
+
+#FAQ {
+    text-align: center;
+    display: none;
+    margin-top: 4.3vw;
+}
+
+#FAQ>p {
+    font: 3.5vw "Arial Black";
+    color: rgb(41, 158, 159);
+}
+
+#FAQ>div>h1 {
+    font-weight: 100;
+}
+
+#FAQ>div {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#p4>div {
+    color: black;
+    font: 1.2vw "Bahnschrift Condensed";
+}
+
+#p4>div>p {
+    color: rgb(41, 158, 159);
+    font: 2vw "Bahnschrift Condensed";
+}
+
+#p4 {
+    display: flex;
+    padding: 5vw 0px;
+    justify-content: space-evenly;
+}
+
+#cont {
+    display: none;
+    margin-top: 4.3vw;
+}
+
+#cont>p {
+    font-size: 86px;
+    font-style: normal;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0;
+    margin-top: 0.3vw;
+    /* font: 3.5vw "Arial Black";
+    color: rgb(41, 158, 159);
+    text-align: center; */
+}
+
+#cont>p>span {
+    font: 5vw Monotype Corsiva;
+    font-weight: bold;
+}
+
+.cont-title {
+    font-family: roboto-bold, roboto, sans-serif;
+    color: #299E9E;
+    font-size: 49px;
+    text-align: center;
+}
+
+#cont .content {
+    display: flex;
+    /* margin: 0 auto; */
+}
+
+#cont .block {
+    display: flex;
+    margin: 0 auto;
+}
+
+#cont .block .block1 {
+    flex: 0 0 25%;
+    display: flex;
+    font: normal normal normal 16px/1.4em Arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+}
+
+#cont .block .block2 {
+    /* flex: 0 0 50vw; */
+    min-width: 180px;
+    max-width: 980px;
+    width: 100%;
+}
+
+.form {
+    padding: 0 15px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form input,
+.form form textarea {
+    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(0, 0, 0, 1);
+    color: #000000;
+    margin: 0 0 5px;
+    /* width: 100%; */
+    padding: 5px;
+}
+
+.form form textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.block1 .text {
+    margin: auto;
+}
+
+#cont .block .block3 {
+    flex: 0 0 25%;
+    font: normal normal normal 25px/1.4em 'open sans', sans-serif;
+    display: flex;
+}
+
+.block3 .text {
+    margin: auto 0;
+}
+
+.adr-t,
+.tel-t,
+.mail-t {
+    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+}
+
+.tel-t a:hover,
+.mail-t a:hover,
+.tel-t a,
+.mail-t a {
+    text-decoration: none;
+    color: black;
+}
+
+#cont {
+    background-image: none;
+    background-color: #fff;
+    margin-bottom: 10vh;
+}
+
+#submit {
+    background-color: rgba(249, 196, 2, 1);
+    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    width: max-content;
+    align-self: flex-end;
+    padding: 5px;
+    border: 0;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: center;
+}
+
+.social a {
+    margin: 0 20px;
+}
+
+.social a,
+.social a:hover {
+    text-decoration: none;
+    color: black;
+}
