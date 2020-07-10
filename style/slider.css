@@ -65,7 +65,7 @@
 
 .slider__item {
     flex: 0 0 50%;
-    width: auto;
+    width: 50%;
 }
 
 .slider__item>div {

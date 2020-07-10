@@ -1,7 +1,8 @@
 body {
-    background-image: url("../img/Фон.webp");
+    background-image: url("../img/ÃƒÂÃ‚Â¤ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â½.webp");
     margin: 0;
     padding: 0;
+    font-family: arial, "ms pgothic", dotum, helvetica, sans-serif;
 }
 
 .menu {
@@ -24,9 +25,10 @@ body {
 }
 
 .korz>img {
-    height: 50px;
+    height: 3.5vw;
     width: auto;
     margin: auto;
+    cursor: pointer;
 }
 
 .elem_menu>a {
@@ -55,6 +57,15 @@ body {
 
 .cont_el {
     padding: 1vw;
+    margin: 3px;
+}
+
+.cont_el:hover {
+    border-style: solid;
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+    border-width: 0px;
+    border-radius: 20px;
 }
 
 .cont_img>img {
@@ -72,15 +83,14 @@ body {
     padding-top: 1.5vw;
     background-color: rgba(255, 255, 255, 0.80);
     opacity: 0;
-    /*Элемент полностью прозрачный (невидимый)*/
     transition: 1s;
     font-size: 1.5vw;
+    cursor: pointer
 }
 
 .cont_el:hover .cont_text {
     opacity: 100;
     transition: 1s;
-    /*Скорость перехода состояния элемента*/
 }
 
 .cont_el>p {
@@ -184,9 +194,6 @@ body {
     text-align: center;
     margin: 0;
     margin-top: 0.3vw;
-    /* font: 3.5vw "Arial Black";
-    color: rgb(41, 158, 159);
-    text-align: center; */
 }
 
 #cont>p>span {
@@ -214,7 +221,7 @@ body {
 #cont .block .block1 {
     flex: 0 0 25%;
     display: flex;
-    font: normal normal normal 16px/1.4em Arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    font: normal normal normal 16px/1.4em Arial, dotum, helvetica, sans-serif;
 }
 
 #cont .block .block2 {
@@ -235,7 +242,7 @@ body {
 
 .form form input,
 .form form textarea {
-    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    font: normal normal normal 14px/1.4em arial, dotum, helvetica, sans-serif;
     background-color: rgba(255, 255, 255, 1);
     border: 2px solid rgba(0, 0, 0, 1);
     color: #000000;
@@ -266,7 +273,7 @@ body {
 .adr-t,
 .tel-t,
 .mail-t {
-    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    font: normal normal normal 14px/1.4em arial, dotum, helvetica, sans-serif;
 }
 
 .tel-t a:hover,
@@ -285,7 +292,7 @@ body {
 
 #submit {
     background-color: rgba(249, 196, 2, 1);
-    font: normal normal normal 14px/1.4em arial, 'ｍｓ ｐゴシック', 'ms pgothic', '돋움', dotum, helvetica, sans-serif;
+    font: normal normal normal 14px/1.4em arial, dotum, helvetica, sans-serif;
     width: max-content;
     align-self: flex-end;
     padding: 5px;
@@ -307,4 +314,256 @@ body {
 .social a:hover {
     text-decoration: none;
     color: black;
+}
+
+#fon_bp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(68, 68, 68, 0.815);
+}
+
+.bp {
+    display: none;
+    /* position: fixed; */
+    width: 50vw;
+    /* height: 50vh; */
+    z-index: 101;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.bp .flex-container {
+    display: flex;
+    /* margin: auto; */
+    width: 100%;
+    padding: 15px;
+}
+
+.bp .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bp .container .close,
+.cart-close {
+    display: flex;
+    flex-direction: row-reverse;
+    border: none;
+    padding: 15px;
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.bp .container .close button,
+.cart-close button {
+    z-index: 102;
+    font-family: courier;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #a1a1a1;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bp-block {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 0 20px;
+}
+
+.bp-block .bp-left {
+    flex: 0 0 50%;
+    padding-right: 35px;
+}
+
+.bp-block .bp-left img {
+    width: 100%;
+    height: auto;
+}
+
+.bp-block .bp-right {
+    width: 100%;
+}
+
+.bp-title {
+    font: normal normal normal 25px/1.4em "open sans", sans-serif;
+}
+
+.bp-price {
+    padding-top: 23px;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+.bp-count {}
+
+.bp-count-title {
+    font-size: 15px;
+    margin-bottom: 12px;
+    display: block;
+    line-height: 1;
+}
+
+.bp-count input {
+    font: normal normal normal 14px/1.4em arial, "ms pgothic", dotum, helvetica, sans-serif;
+    padding-left: 1em;
+    /* padding-right: 2em; */
+    width: 100px;
+    line-height: 2em;
+}
+
+.bp-add-cart {
+    /* padding: 15px 20px; */
+    background-color: #F9C402;
+    margin-top: 35px;
+}
+
+.bp-add-cart button {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #F9C402;
+    color: #FFFFFF;
+    border-width: 0;
+    border-color: #000000;
+    border-radius: 0px;
+    font-size: 15px;
+    font: normal normal normal 14px/1.4em arial, dotum, helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#cart {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    flex-direction: row-reverse;
+    background-color: rgba(68, 68, 68, 0.815);
+}
+
+.cart-container {
+    /* margin: auto; */
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    /* padding: 15px; */
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-heder {
+    background: #000000;
+    width: 100%;
+    height: 100px;
+    padding: 20px 0 0;
+    display: flex;
+}
+
+.cart-title {
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+    font-size: 2em;
+    /* font-weight: lighter; */
+    line-height: 2em;
+    /* text-align: center; */
+}
+
+.cart-content {
+    padding: 34px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    padding-bottom: 5p;
+    padding-bottom: 5;
+}
+
+.item-img {
+    margin-right: 15px;
+}
+
+.item-img img {
+    width: auto;
+    height: 6em;
+}
+
+.item-name {
+    color: #535353;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+.item-price {
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.item-count {
+    margin-top: 8px;
+}
+
+.item-count input {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    width: 64px;
+    /* height: 28px; */
+    line-height: 2em;
+}
+
+.cart-footer {
+    padding: 34px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-sum {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 12px;
+    height: 76px;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.cart-buy {}
+
+.cart-buy button {
+    width: 100%;
+    background-color: #F9C402;
+    border-width: 0;
+    border-color: #000000;
+    border-radius: 0;
+    color: #FFFFFF;
+    font: normal normal normal 14px/1.4em arial, "ms pgothic", dotum, helvetica, sans-serif;
+    padding: 10px 20px;
+    align-self: flex-end;
 }

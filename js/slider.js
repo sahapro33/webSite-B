@@ -8,7 +8,7 @@
           _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
           _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
           _positionLeftItem = 0, // позиция левого активного элемента
-          _transform =25 , // значение транфсофрмации .slider_wrapper
+          _transform =0 , // значение транфсофрмации .slider_wrapper
           _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
           _items = [], // массив элементов
           _interval = 0,

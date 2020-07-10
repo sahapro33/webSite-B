@@ -16,7 +16,7 @@
         <div class="elem_menu"><a href="#" id="c3" onclick="click3(this)">ГДЕ КУПИТЬ</a></div>
         <div class="elem_menu"><a href="#" id="c4" onclick="click4(this)">FAQ</a></div>
         <div class="elem_menu"><a href="#" id="c5" onclick="click5(this)">КОНТАКТЫ</a></div>
-        <div class="korz"> <img src="img/Корз.png" alt=""></div>
+        <div class="korz"> <img src="img/Корз.png" alt="" onclick="show_cart()"></div>
     </div>
     <div id="Magazin">
         <div class="slider">
@@ -47,7 +47,7 @@
         <div class="contener">
             <div class="cont_el">
                 <div class="cont_img"><img src="img/2.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br1(this)">быстрый просмотр</div>
                 </div>
                 <p> Наушники проводные samsung</p>
                 <p>Цена 453,00 ₽</p>
@@ -55,7 +55,7 @@
 
             <div class="cont_el">
                 <div class="cont_img"><img src="img/11.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br2(this)">быстрый просмотр</div>
                 </div>
                 <p> Наушники проводные </p>
                 <p>Цена 299,00 ₽</p>
@@ -63,7 +63,7 @@
 
             <div class="cont_el">
                 <div class="cont_img"><img src="img/12.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br3(this)">быстрый просмотр</div>
                 </div>
                 <p> AIrPods</p>
                 <p>Цена 10 890,00 ₽</p>
@@ -71,7 +71,7 @@
 
             <div class="cont_el">
                 <div class="cont_img"><img src="img/13.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br4(this)">быстрый просмотр</div>
                 </div>
                 <p> Наушники проводные samsung</p>
                 <p>Цена 479,00 ₽</p>
@@ -80,7 +80,7 @@
 
             <div class="cont_el">
                 <div class="cont_img"><img src="img/14.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br5(this)">быстрый просмотр</div>
                 </div>
 
                 <p>Samsung Galaxy A01</p>
@@ -89,7 +89,7 @@
 
             <div class="cont_el">
                 <div class="cont_img"><img src="img/15.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br6(this)">быстрый просмотр</div>
                 </div>
                 <p> Samsung Galaxy A51 </p>
                 <p>Цена 20 980,00 ₽</p>
@@ -97,7 +97,7 @@
 
             <div class="cont_el">
                 <div class="cont_img"><img src="img/16.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br7(this)">быстрый просмотр</div>
                 </div>
                 <p> Iphone SE</p>
                 <p>Цена 20 000,00 ₽</p>
@@ -105,7 +105,7 @@
 
             <div class="cont_el">
                 <div class="cont_img"><img src="img/17.webp" alt="">
-                    <div class="cont_text" id="cont_text">быстрый просмотр</div>
+                    <div class="cont_text" id="cont_text" onclick="br8(this)">быстрый просмотр</div>
                 </div>
                 <p> Iphone X</p>
                 <p>Цена 46 999,00 ₽</p>
@@ -260,6 +260,294 @@
             </div>
         </div>
     </div>
+    <!--Фон задний быстрого просмотра-->
+    <div id='fon_bp'>
+
+        <!--Блоки быстрого просмотра с информацией-->
+        <!--1-->
+        <div id='bp1' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/2.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title">Наушники проводные samsung</div>
+                            <div class="bp-price">453,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp1-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp1')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--2-->
+        <div id='bp2' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/11.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title">Наушники проводные</div>
+                            <div class="bp-price">299,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp2-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp2')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--3-->
+        <div id='bp3' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/12.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title">AIrPods</div>
+                            <div class="bp-price">10 890,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp3-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp3')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--4-->
+        <div id='bp4' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/13.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title"> Наушники проводные samsung</div>
+                            <div class="bp-price">479,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp4-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp4')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--5-->
+        <div id='bp5' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/11.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title">Наушники проводные</div>
+                            <div class="bp-price">299,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp5-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp5')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--6-->
+        <div id='bp6' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/11.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title">Наушники проводные</div>
+                            <div class="bp-price">299,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp6-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp6')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--7-->
+        <div id='bp7' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/11.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title">Наушники проводные</div>
+                            <div class="bp-price">299,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp7-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp7')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--8-->
+        <div id='bp8' class="bp">
+            <div class="flex-container">
+                <div class="container">
+                    <div class="close">
+                        <button onclick="krest(this)">×</button>
+                    </div>
+                    <!--Внутренности быстрого просмотра-->
+                    <div class="bp-block">
+                        <div class="bp-left">
+                            <img src="./img/11.webp" alt="" srcset="">
+                        </div>
+                        <div class="bp-right">
+                            <div class="bp-title">Наушники проводные</div>
+                            <div class="bp-price">299,00 ₽</div>
+                            <div class="bp-count">
+                                <div class="bp-count-title">Количество</div>
+                                <div class="bp-count-field">
+                                    <input type="number" name="bp-count" id="bp8-count" min="0" max="25" value="1">
+                                </div>
+                            </div>
+                            <div class="bp-add-cart">
+                                <button onclick="add_to_cart('bp8')">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="cart">
+        <div class="cart-container">
+
+            <div class="cart-heder">
+                <div class="cart-close">
+                    <button onclick="close_cart()">></button>
+                </div>
+                <div class="cart-title">Корзина</div>
+            </div>
+            <div class="cart-content">
+                <div class="cart-item">
+                    <div class="item-img">
+                        <img src="./img/11.webp" alt="" srcset="">
+                    </div>
+                    <div class="item-info">
+                        <div class="item-name">
+                            Наушники проводные
+                        </div>
+                        <div class="item-price">
+                            299,00 <span>₽</span>
+                        </div>
+                        <div class="item-count">
+                            <input type="number" name="bp-count" id="ITEM_ID-count" min="0" max="25" value="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-sum">
+                    <div class="cart-sum-header">Сумма</div>
+                    <div class="cart-sum-number">
+                        0 <span>₽</span>
+                    </div>
+                </div>
+                <div class="cart-buy">
+                    <button onclick="">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
